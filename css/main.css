@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Aileron Black';
+    src: url('../fonts/aileron_black/Aileron-Black-webfont.ttf') format('woff2'),
+         url('../fonts/aileron_black/Aileron-Black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --black: #292929;
+    --white: #ffffff;
+    --lines: #dbdbdb;
+    --stroke: #dbdbdb;
+    --orange: #ea731e;
+}
+
+body {
+    font-family: 'Aileron Black', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    height: 95vh
+}
+
+.container {
+    border: 2px solid var(--lines);
+    padding: 40px;
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.9em;
+    letter-spacing: 0.8rem;
+}
+
+.glow {
+    opacity: 1;
+    color: var(--orange);
+    text-shadow: 0 0 2px var(--stroke),
+                 0 0 2px var(--stroke),
+                 0 0 2px var(--stroke),
+                 0 0 2px var(--stroke),
+                 0 0 2px var(--stroke);
+}
+
+
+.bigtitle {
+    font-size: 7em;
+    margin: 0;
+    letter-spacing: 0.3rem;
+    z-index: 2;
+}
+
+.title {
+    font-size: 1.2em;
+    margin: 0;
+    letter-spacing: 0.8rem;
+}
+
+.years {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 0.9em;
+}
+
+.email {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 1em;
+    color: var(--orange)
+}
+
+.email-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.line {
+    border-top: 2px solid var(--lines);
+    width: 50%;
+    margin: 20px auto;
+}
+
+.line-vertical {
+    border-left: 2px solid var(--lines);
+    height: 50%;
+    position: absolute;
+}
+
+.line-top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.line-bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
