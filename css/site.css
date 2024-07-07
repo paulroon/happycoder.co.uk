@@ -12,6 +12,7 @@
     --lines: #dbdbdb;
     --stroke: #dbdbdb;
     --orange: #ea731e;
+    --titlesize: 20.5vw;
 }
 
 body {
@@ -57,7 +58,7 @@ body {
 
 
 .bigtitle {
-    font-size: 7em;
+    font-size: var(--titlesize);
     margin: 0;
     letter-spacing: 0.3rem;
     z-index: 2;
