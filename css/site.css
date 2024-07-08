@@ -12,7 +12,21 @@
     --lines: #dbdbdb;
     --stroke: #dbdbdb;
     --orange: #ea731e;
-    --titlesize: 20.5vw;
+    --titlesize: 15.5vw;
+    --maxtitlesize: 3.1rem;
+}
+
+.bigtitle {
+    font-size: var(--titlesize);
+    margin: 0;
+    letter-spacing: 0.3rem;
+    z-index: 2;
+}
+
+@media (max-width: 800px) {
+    .bigtitle {
+        font-size: var(--maxtitlesize);
+    }
 }
 
 body {
@@ -57,12 +71,7 @@ body {
 }
 
 
-.bigtitle {
-    font-size: var(--titlesize);
-    margin: 0;
-    letter-spacing: 0.3rem;
-    z-index: 2;
-}
+
 
 .title {
     font-size: 1.2em;
